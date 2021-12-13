@@ -536,6 +536,7 @@ function validarDaño(enemigos, personaje){
 
       if(personaje.getVida() === 0){
         screen = 14;
+        
       }
     }
     
@@ -746,7 +747,7 @@ function mousePressed(){
     //Opción correcta de RETO5
     case 13:
       if(mouseX > 728 && mouseX < 728 + 390 &&
-        mouseY > 280 && mouseY < 280 + 90){
+        mouseY > 420 && mouseY < 420 + 90){
         screen = 15;
         personaje.setCol(1);
         personaje.setFila(6);
@@ -760,7 +761,6 @@ function mousePressed(){
         screen = 0;
         personaje.setCol(1);
         personaje.setFila(6);
-
       }
       break;
     }
